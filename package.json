@@ -1,16 +1,15 @@
 {
   "name": "reward-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Reward backend API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^4.18.2"
   }
 }
