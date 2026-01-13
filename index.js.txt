@@ -1,0 +1,22 @@
+const express = require("express");
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// middleware
+app.use(express.json());
+
+// root route
+app.get("/", (req, res) => {
+  res.send("Reward backend is running");
+});
+
+// example test route
+app.get("/health", (req, res) => {
+  res.json({ status: "ok" });
+});
+
+// start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
